@@ -1,0 +1,2 @@
+event=hotkey (ATKD|HOTK) 000000c5
+action=/etc/acpi/asus-kbd-backlight.py down
