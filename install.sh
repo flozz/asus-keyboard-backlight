@@ -27,11 +27,15 @@ _install() {
 	mkdir -pv "$1"/usr/share/doc/asus-kbd-backlight/
 	cp -v ./README "$1"/usr/share/doc/asus-kbd-backlight/
 	cp -v ./AUTHORS "$1"/usr/share/doc/asus-kbd-backlight/
+	#Bak
+	mkdir -pv "$1"/var/lib/asus-kbd-backlight/
+	echo 1 > "$1"/var/lib/asus-kbd-backlight/brightness
 }
 
 
 _remove() {
 	rm -rv /usr/share/doc/asus-kbd-backlight/
+	rm -rv /var/lib/asus-kbd-backlight/
 	rm -v /etc/acpi/events/asus-kb-brightness-down
 	rm -v /etc/acpi/events/asus-kb-brightness-up
 	rm -v /etc/acpi/asus-kbd-backlight.py
