@@ -1,41 +1,13 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-############################################################################
-##                                                                        ##
-## ASUS Keyboard Backlight - keyboard backlight support for ASUS laptops. ##
-##                                                                        ##
-## Copyright (C) 2010  Fabien Loison (flo@flogisoft.com)                  ##
-##                                                                        ##
-## This program is free software: you can redistribute it and/or modify   ##
-## it under the terms of the GNU General Public License as published by   ##
-## the Free Software Foundation, either version 3 of the License, or      ##
-## (at your option) any later version.                                    ##
-##                                                                        ##
-## This program is distributed in the hope that it will be useful,        ##
-## but WITHOUT ANY WARRANTY; without even the implied warranty of         ##
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          ##
-## GNU General Public License for more details.                           ##
-##                                                                        ##
-## You should have received a copy of the GNU General Public License      ##
-## along with this program.  If not, see <http://www.gnu.org/licenses/>.  ##
-##                                                                        ##
-############################################################################
 
-
-"""Adds the keyboard backlight support for ASUS laptops.
-
-Tested and works on the following model:
-    * ASUS G51Jx 3D IX026V, on Ubuntu 10.10 (Maverick)
-
-    If it work (or not) on your ASUS laptop, please send me an email 
-    with your laptop model and your system name and version :).
-"""
+"""Adds the keyboard backlight support for ASUS laptops."""
 
 __version__ = "0.1"
-__author__ = "Fabien Loison <flo@flogisoft.com>"
+__author__ = "Fabien Loison"
 __copyright__ = "Copyright © 2010 Fabien LOISON"
-__website__ = "http://software.flogisoft.com/asus-kbd-backlight/"
+__website__ = "https://github.com/flozz/asus-keyboard-backlight"
 
 
 import os
