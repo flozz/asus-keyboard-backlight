@@ -7,10 +7,10 @@ __NOTE:__ This is the new repository of ASUS Keyboard Backlight that used to be 
 
 ## Dependencies
 
-    * Python
-    * ACPI Daemon
-    * ~~(optional) pyNotify~~ this is not required anymore as the code that
-      uses this works with an old Xorg and GDM
+* Python
+* ACPI Daemon
+* ~~(optional) pyNotify~~ this is not required anymore as the code that
+    uses this works with an old Xorg and GDM
 
 
 ## Installing ASUS Keyboard Backlight
