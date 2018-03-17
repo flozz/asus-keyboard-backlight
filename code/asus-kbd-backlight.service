@@ -1,0 +1,12 @@
+[Unit]
+Description=Allow user access to keyboard backlight
+After=systemd-udevd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/asus-kbd-backlight allowusers
+ExecStop=/usr/bin/asus-kbd-backlight disallowusers
+
+[Install]
+WantedBy=multi-user.target
