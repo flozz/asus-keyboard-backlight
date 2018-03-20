@@ -5,8 +5,15 @@ After=systemd-udevd.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/asus-kbd-backlight allowusers
-ExecStop=/usr/bin/asus-kbd-backlight disallowusers
+ExecStart=/usr/bin/echo 3 > /sys/class/leds/asus::kbd_backlight
+# at  least auto start lights on boot
+## just if /etc/systemd/ exisists add @ boot. 
+##
+##
+ExecStart=/etc/init.d/asus-kbd-backlight allowusers
+# Start service/s script 
+ExecStop=/etc/init.d/asus-kbd-backlight disallowusers
+# Stop service/s script 
 
 [Install]
 WantedBy=multi-user.target
